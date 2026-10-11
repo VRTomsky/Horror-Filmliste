@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Horror-Charades – Die Filmliste</title>
+  <meta name="description" content="Alle Horrorfilme aus dem Pantomime-Spiel von Inde Navarrette und Michael Johnston bei Hot Ones Versus – mit Story, Besetzung, Fortsetzungen, Trailern und Streaming auf Peacock.">
+  <meta name="theme-color" content="#0a0708">
+  <meta property="og:title" content="Horror-Charades – Die Filmliste">
+  <meta property="og:description" content="12 Horrorfilme aus Hot Ones Versus mit Trailer, Cast, Fortsetzungen und wo du sie streamen kannst.">
+  <meta property="og:image" content="assets/backdrops/ring.webp">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect x='2' y='7' width='28' height='18' rx='2' fill='%23161012' stroke='%23ff3b4a' stroke-width='2'/%3E%3Ccircle cx='11' cy='16' r='4' fill='none' stroke='%23f3ece8' stroke-width='2'/%3E%3Ccircle cx='21' cy='16' r='4' fill='none' stroke='%23f3ece8' stroke-width='2'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,300..900;1,62..125,300..900&family=Instrument+Serif:ital@0;1&family=VT323&display=swap">
+  <link rel="stylesheet" href="css/style.css?v=2">
+</head>
+<body>
+  <a class="skip" href="#filme">Zur Filmliste springen</a>
+
+  <!-- HERO: 3D-Videothekenregal -->
+  <header class="hero" id="top">
+    <canvas id="shelf" aria-hidden="true"></canvas>
+    <div class="hero-fallback" aria-hidden="true"></div>
+    <div class="hero-vignette" aria-hidden="true"></div>
+
+    <div class="osd osd-top" aria-hidden="true">
+      <span class="osd-play">PLAY <svg viewBox="0 0 12 12"><path d="M2 1l9 5-9 5z" fill="currentColor"/></svg></span>
+      <span>SP</span>
+      <span class="osd-counter" id="counter">0:17:30</span>
+    </div>
+    <div class="osd osd-right" aria-hidden="true">CH 03 · HOT ONES VERSUS</div>
+
+    <div class="hero-copy">
+      <p class="kicker">Die Filmliste zum Pantomime-Spiel</p>
+      <h1 class="glitch" data-text="Horror-Charades">Horror-Charades</h1>
+      <p class="hero-sub">Inde Navarrette und Michael Johnston spielen bei <em>Hot Ones Versus</em> Horrorfilme mit Händen und Füßen nach. Hier sind alle 12 Filme aus dem Spiel: was du über sie wissen musst und wo du sie streamen kannst.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#filme">Zur Liste</a>
+        <a class="btn btn-ghost" href="#spiel">Das Spiel ansehen</a>
+      </div>
+      <p class="hero-hint" id="shelf-hint"><span class="hint-desktop">Regal mit der Maus drehen, Kassette anklicken</span><span class="hint-touch">Regal mit dem Finger drehen, Kassette antippen</span> · <span id="shelf-front">Vorne: The Ring</span></p>
+    </div>
+  </header>
+
+  <main>
+    <!-- DAS SPIEL -->
+    <section class="game" id="spiel" aria-labelledby="h-spiel">
+      <div class="game-tv">
+        <div class="crt crt-lg">
+          <div class="crt-screen">
+            <video src="assets/clips/hero.mp4" poster="assets/clips/hero.jpg" muted loop playsinline autoplay preload="metadata" aria-label="Ausschnitt: Michael spielt Das Schweigen der Lämmer vor"></video>
+            <span class="crt-osd">▶ PLAY 18:08</span>
+          </div>
+          <div class="crt-knobs" aria-hidden="true"><i></i><i></i><b></b></div>
+        </div>
+      </div>
+      <div class="game-copy">
+        <p class="kicker">Hot Ones Versus · ab Minute 17:30</p>
+        <h2 id="h-spiel">Eine Minute, kein Wort</h2>
+        <p>Zum Schluss der Folge ziehen beide abwechselnd Karten mit Horrorfilmen aus einer Schüssel und spielen sie stumm vor. Wer weniger Titel durchbringt, muss den letzten Chicken Wing essen.</p>
+        <div class="scoreboard" aria-label="Endstand: Inde 2, Michael 5">
+          <div class="score-plate"><span>Inde</span><b>2</b></div>
+          <div class="score-plate"><b>5</b><span>Michael</span></div>
+        </div>
+        <div class="yt-lite" id="yt-main" data-id="mlwD5SdMM7I" data-start="1050">
+          <button class="yt-btn" type="button" aria-label="Ganzes Video ab 17:30 hier abspielen">
+            <img src="https://i.ytimg.com/vi/mlwD5SdMM7I/hqdefault.jpg" alt="" loading="lazy" width="480" height="360">
+            <span class="yt-play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z" fill="currentColor"/></svg></span>
+            <span class="yt-label">Ganze Szene abspielen · 17:30</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- FILTER -->
+    <div class="toolbar" id="filme">
+      <div class="toolbar-inner">
+        <div class="chips" role="group" aria-label="Filme filtern">
+          <button class="chip" type="button" data-filter="all" aria-pressed="true">Alle <span>12</span></button>
+          <button class="chip" type="button" data-filter="peacock" aria-pressed="false">Auf Peacock <span>7</span></button>
+          <button class="chip" type="button" data-filter="open" aria-pressed="false">Noch nicht gesehen <span id="open-count">12</span></button>
+        </div>
+        <div class="progress" aria-live="polite">
+          <span id="seen-text">0 von 12 gesehen</span>
+          <div class="progress-bar" aria-hidden="true"><i id="seen-bar"></i></div>
+        </div>
+      </div>
+    </div>
+
+    <section class="block" aria-labelledby="h-game">
+      <div class="block-head">
+        <p class="kicker">Teil 1 · Die Karten aus der Schüssel</p>
+        <h2 id="h-game">Die 8 Filmkarten</h2>
+        <p>In der Reihenfolge aus dem Video. Runde 1: Michael spielt vor, Inde rät. Runde 2: umgekehrt.</p>
+      </div>
+      <div id="list-game"></div>
+    </section>
+
+    <section class="block block-wrong" aria-labelledby="h-wrong">
+      <div class="block-head">
+        <p class="kicker">Teil 2 · Danebengeraten</p>
+        <h2 id="h-wrong">Falsch geraten, trotzdem sehenswert</h2>
+        <p>Diese Filme waren nicht gesucht. Sie wurden beim Raten aber laut gerufen.</p>
+      </div>
+      <div id="list-wrong" class="wrong-grid"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p><b>Streaming-Stand:</b> 11. Oktober 2026, Quelle <a href="https://www.justwatch.com" target="_blank" rel="noopener">JustWatch</a>. Kataloge ändern sich jeden Monat. Vor dem Schauen am besten kurz über den JustWatch-Link beim Film prüfen.</p>
+      <p><b>Peacock</b> gibt es offiziell nur in den USA. Die Peacock-Angaben gelten für den US-Katalog (Peacock Premium).</p>
+      <p>Auch gerufen, aber nicht in der Liste: „Phone Call“ (kein eindeutiger Filmtitel) und „Chainsaw Man“ (Anime).</p>
+      <p class="fine">Inoffizielle Fanseite. Plakate und Szenenbilder über JustWatch/TMDB, Videoausschnitte aus <a href="https://www.youtube.com/watch?v=mlwD5SdMM7I" target="_blank" rel="noopener">Hot Ones Versus</a> von First We Feast. Alle Rechte bei den jeweiligen Inhabern.</p>
+    </div>
+  </footer>
+
+  <!-- Trailer-Fenster -->
+  <dialog class="trailer" id="trailer" aria-labelledby="trailer-title">
+    <div class="trailer-head">
+      <h2 id="trailer-title">Trailer</h2>
+      <button class="trailer-close" type="button" aria-label="Trailer schließen"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M5 5l10 10M15 5L5 15" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg></button>
+    </div>
+    <div class="trailer-frame" id="trailer-frame"></div>
+  </dialog>
+
+  <script src="js/data.js?v=2"></script>
+  <script src="js/app.js?v=2"></script>
+  <script type="module" src="js/shelf3d.js?v=2"></script>
+</body>
+</html>
